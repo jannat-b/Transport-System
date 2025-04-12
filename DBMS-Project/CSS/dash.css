@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.bg-blur {
+    background: url('../Images/banner.png') no-repeat center center;
+    background-size: cover;
+    background-color: #2d3748; /* Fallback background color */
+    filter: blur(5px);
+    position: fixed; /* Use fixed to ensure it covers the entire screen */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+    z-index: -1;
+
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    width: 100%;
+   background-color: #4e54c8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     margin-top: 0px;
+    
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.Logo  {
+    background: linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+    padding: 6px 25px;
+    margin-left: 0px;
+    font-size: 16px;
+   border-radius: 2px;
+}
+
+
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.nav-right a:hover {
+    color: rgb(91, 172, 234);
+    border-radius: 5px;
+}
+/* Logout Button */
+.logout-btn {
+    align-items: end;
+    background:linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+}
+/* Sidebar */
+.dashboard-container {
+    display: flex;
+     /* To prevent overlapping with top nav */
+    height: calc(100vh - 60px);
+}
+
+/* Sidebar styles */
+
+         /* Sidebar */
+         .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 60px; /* Ensures sidebar appears below the navbar */
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+
+        .sidebar.active {
+            transform: translateX(0);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color:#de71e5;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            padding-left: 5px;
+        }
+        
+        a.about {
+          
+            margin-top: 80px;
+            margin-left: 10px;
+        }
+        .profile_name {
+            background: linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+            
+             margin-left: 0px;
+             font-size: 10px;
+            border-radius: 2px;
+        }
+        .text-sm {
+            margin-top: 5px;
+            
+        }
+        .text-sm a:hover{
+            color:#de71e5;
+            
+        }
+
+
+.profile {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.profile-pic img {
+    width: 60px;
+    display: inline-block;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+.sidebar-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    margin-right: 15px;
+}
+
+
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for cards */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height:200px;
+    margin-top: 100px;
+}
+
+.btn-primary {
+    background-color: #4f46e5; /* Blue */
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca; /* Darker Blue */
+}
+
+.btn-secondary {
+    background-color: #9333ea; /* Purple */
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #7e22ce; /* Darker Purple */
+}
+div.grid {
+    align-items: center;
+    margin-left: 50px;
+}

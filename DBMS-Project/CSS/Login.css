@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg-blur {
+    background: url('../Images/banner.png') no-repeat center center;
+    background-size: cover;
+    background-color: #2d3748; /* Fallback background color */
+    filter: blur(5px);
+    position: fixed; /* Use fixed to ensure it covers the entire screen */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+    z-index: -1;
+
+}
+/* Container box */
+div.loginHeader {
+    text-align: center;
+     color: #f2ecec;
+     margin-bottom: 0px;
+}
+div.loginHeader h1{
+    font-size: 100px;
+   
+    margin-top: 0px;
+    
+   
+}
+div.loginHeader p {
+    font-size: 20px;
+    color: rgb(30, 56, 208);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom:30px;
+    margin-top: 0px;
+}
+
+div.loginHeader p:after{
+    content:'';
+    display:block;
+    height: 2px;
+    background: rgb(243, 225, 240);
+    margin:0 auto;
+}
+
+div.error{
+    text-align: center;
+}
+div.loginBody {
+    margin:0 auto;
+    width:350px;
+    background-color: rgba(87, 92, 109, 0.7);
+    padding: 20px 30px;
+    border: 3px solid rgb(31, 40, 108);
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+
+div.loginInput{
+    margin-top: 20px; 
+}
+div.loginInput label {
+    display: block;
+    text-transform: uppercase;
+    font-size:20 px;
+    font-weight: bold;
+    color:#f2ecec;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+div.loginInput input {
+   height: 30px;
+    width:100%;
+    background-color: #1c1313;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #f2ecec;
+    font-style: italic;
+    border-width: 0px;
+}
+div.loginButton {
+    margin-top: 10px;
+    text-align: center;
+}
+div.loginButton button{
+    font-size: 20px;
+    width:100%;
+    padding:10px 20px;
+    background:linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+    border:none;
+    border-radius: 8px;
+    color:#f4f4f4;
+    margin-bottom: 0px;
+    margin-top: 0px;;
+}
+
+div.loginButton button:hover {
+    color: royalblue;
+}
+div.rememberMe {
+    margin-bottom: 0px;
+}

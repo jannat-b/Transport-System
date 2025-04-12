@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bg-blur {
+    background: url('../Images/banner.png') no-repeat center center;
+    background-size: cover;
+    background-color: #2d3748; /* Fallback background color */
+    filter: blur(5px);
+    position: fixed; /* Use fixed to ensure it covers the entire screen */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+    z-index: -1;
+
+}
+.header h2 {
+    background: linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+    text-align:center;
+     font-size: 15px;
+     margin-bottom: 20px;
+     padding:2px;
+     color:#ddd;
+     width:30%;
+     margin-left: 250px;
+     text-transform: uppercase;
+}
+table {
+    background-color: rgb(99, 73, 202);
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+   
+}
+
+th, td {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+th {
+    background: royalblue;
+    color: white;
+}
+
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background:royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background: darkblue;
+}
+
+.bg-blue-500 {
+    background: royalblue;
+}
+
+.bg-blue-500:hover {
+    background: #2980b9;
+}
+
+.bg-red-500 {
+    background: #e74c3c;
+}
+
+.bg-red-500:hover {
+    background: #c0392b;
+}
+
+.bg-green-500 {
+    background: #27ae60;
+}
+
+.bg-green-500:hover {
+    background: #2ecc71;
+}
+div.tableBox {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(87, 92, 109, 0.7);
+    border-radius: 10px;
+    margin-top: 70px;
+    text-align: center;
+    align-items: center;
+}
+/* Top Navigation Bar */
+.top-nav {
+    width: 100%;
+   background-color: #4e54c8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px  12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     margin-top: 0px;
+    
+}
+
+ .top-nav h1 {
+    background: linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+   padding: 8px;
+    margin-left: 30px;
+    font-size: 16px;
+   border-radius: 2px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.nav-right a:hover {
+    color: rgb(91, 172, 234);
+    border-radius: 5px;
+}
+/* Logout Button */
+.logout-btn {
+    align-items: end;
+    background:linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, hsl(252, 55%, 54%), hsl(279, 65%, 60%));
+}
